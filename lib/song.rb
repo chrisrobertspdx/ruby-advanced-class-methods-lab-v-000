@@ -41,7 +41,7 @@ class Song
   end
 
   def self.new_from_filename(filename)
-     components = filename.split(/\s-\s,\./)
+     components = filename.split(/[\s-\s,\.]/)
      #components = filename.split(".")
      puts components.inspect
   end
