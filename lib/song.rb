@@ -40,6 +40,11 @@ class Song
       }
   end
 
+  def self.new_from_filename(filename)
+     components = filename.split(/(\s-\s)|(\.)/)
+     puts components.inspect
+  end
+
   def self.all
     @@all
   end
