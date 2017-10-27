@@ -4,7 +4,7 @@ class Song
 
   def self.create
     inst = self.new
-    @@all << inst 
+    @@all << inst
     inst
   end
 
