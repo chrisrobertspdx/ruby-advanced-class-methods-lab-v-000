@@ -8,6 +8,12 @@ class Song
     inst
   end
 
+  def self.new_by_name(name)
+    inst = self.new
+    inst.name = name
+    inst
+  end
+
   def self.create
     @@all << self.new
   end
