@@ -3,6 +3,12 @@ class Song
   @@all = []
 
   def self.create
+    inst = self.new
+    @@all << inst
+    inst
+  end
+
+  def self.create
     @@all << self.new
   end
 
