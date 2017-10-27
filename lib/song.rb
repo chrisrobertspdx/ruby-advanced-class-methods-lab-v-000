@@ -7,6 +7,11 @@ class Song
     self
   end
 
+  def new_by_name(name)
+    @name = name
+    @@all << self
+  end
+
   def self.all
     @@all
   end
