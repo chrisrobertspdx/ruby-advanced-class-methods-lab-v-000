@@ -47,7 +47,7 @@ class Song
      song.name = components[1]
      song.artist_name = components[0]
      #Ssong.save
-     song
+     #song
   end
 
   def self.create_from_filename(filename)
