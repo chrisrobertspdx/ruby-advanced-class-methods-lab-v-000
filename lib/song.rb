@@ -3,7 +3,9 @@ class Song
   @@all = []
 
   def self.create
-    self.new
+    inst = self.new
+    @@all << inst 
+    inst
   end
 
   def self.new_by_name(name)
