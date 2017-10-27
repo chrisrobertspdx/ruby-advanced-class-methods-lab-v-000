@@ -34,6 +34,17 @@ class Song
     end
   end
 
+  def self.alphabetical
+    self.all.sort{|a,b| 
+        if a[name] < b[name]
+          1
+        elsif a[name] > b[name]
+          -1
+        else
+          0
+      }
+  end
+  
   def self.all
     @@all
   end
