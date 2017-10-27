@@ -7,7 +7,7 @@ class Song
     @@all << inst
   end
 
-  
+
 
   def self.all
     @@all
